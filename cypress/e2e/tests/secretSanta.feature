@@ -26,5 +26,6 @@ Feature: User login in secret santa website and create a box then adds participa
     Then the toss completed
 
   Scenario: delete a box
-    Given userAuthor logs in for delete as "deminaon@gmail.com" and "qwerty"
+    Given visit website
+    When userAuthor logs in for delete as "deminaon@gmail.com" and "qwerty"
     Then delete a box

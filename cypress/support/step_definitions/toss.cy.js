@@ -1,6 +1,5 @@
 import { Given, When, Then, After } from "@badeball/cypress-cucumber-preprocessor";
 const boxPage = require("../../fixtures/pages/boxPage.json");
-const users = require("../../fixtures/users.json");
 
 Given("userAuthor logs again in as {string} and {string}", function (login, password) {
   cy.wait(10000); // Ждём 10 секунд перед каждым тестом, чтобы обойти проблему с слишком большим кол-вом запросов к серверу  
