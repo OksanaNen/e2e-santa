@@ -1,4 +1,5 @@
 {
   "arrowRight": ".btn-arrow-right",
-  "submitButton": ".btn-main"
+  "submitButton": ".btn-main",
+  "websiteName": ".home-page__logo > div > :nth-child(1)"
 }

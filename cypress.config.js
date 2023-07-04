@@ -6,6 +6,8 @@ const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-prepro
 
 module.exports = defineConfig({
   e2e: {
+    projectId: 'as4p1t',
+    video: false,
     baseUrl: "https://santa-secret.ru/",
     testIsolation: false,
     specPattern: "**/*.feature",

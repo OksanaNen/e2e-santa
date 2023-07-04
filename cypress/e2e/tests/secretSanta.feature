@@ -1,31 +1,51 @@
-Feature: User login in secret santa website and create a box then adds participants and starts the toss
+Feature: User login in secret santa website
 
-  Scenario: userAuthor logs in and create a box successfuly
-    Given userAuthor is on secret santa login page
-    When userAuthor logs in as "deminaon@gmail.com" and "qwerty" 
-    Then userAuthor is created a box
+  Scenario: user logs in uccessfuly
+    Given user1 visits website
+    When user1 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user1 is on the page
 
-  Scenario: userAuthor adds participants (creates invite link)
-    Given userAuthor is in a box
-    When userAuthor creates invite link and gets links 
-    Then Clear cookies
+  Scenario: user logs in uccessfuly
+    Given user2 visits website
+    When user2 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user2 is on the page
 
-  Scenario: users approve an invite link
-    Given user is on secret santa login page
-    When users logs in as "<login>" and "<password>" + users approved
-    Then Clear cookies again
-  Examples: 
-    |login|password|
-    |deminaon+1@gmail.com|qwerty|
-    |deminaon+2@gmail.com|qwerty|
-    |deminaon+3@gmail.com|qwerty|
+  Scenario: user logs in uccessfuly
+    Given user3 visits website
+    When user3 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user3 is on the page
+
+  Scenario: user logs in uccessfuly
+    Given user4 visits website
+    When user4 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user4 is on the page
   
-  Scenario: userAuthor starts the toss and the toss completed successfuly
-    Given userAuthor logs again in as "deminaon@gmail.com" and "qwerty" 
-    When userAuthor starts the toss
-    Then the toss completed
+  Scenario: user logs in uccessfuly
+    Given user5 visits website
+    When user5 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user5 is on the page
 
-  Scenario: delete a box
-    Given visit website
-    When userAuthor logs in for delete as "deminaon@gmail.com" and "qwerty"
-    Then delete a box
+  Scenario: user logs in uccessfuly
+    Given user6 visits website
+    When user6 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user6 is on the page
+  
+  Scenario: user logs in uccessfuly
+    Given user7 visits website
+    When user7 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user7 is on the page
+
+  Scenario: user logs in uccessfuly
+    Given user8 visits website
+    When user8 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user8 is on the page
+
+  Scenario: user logs in uccessfuly
+    Given user9 visits website
+    When user9 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user9 is on the page
+
+  Scenario: user logs in uccessfuly
+    Given user10 visits website
+    When user10 logins in "deminaon@gmail.com" and "qwerty" 
+    Then user10 is on the page
