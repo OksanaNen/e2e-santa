@@ -13,7 +13,7 @@
     "cy:config1": "cypress run --spec 'cypress/e2e/tests/test1/test1.feature' --config-file cypress.config1.js --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582",
     "cy:config2": "cypress run --spec 'cypress/e2e/tests/test2/test2.feature' --config-file cypress.config2.js --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582",
     "cy:config1:parallel": "cypress run --spec 'cypress/e2e/tests/test1/test1.feature' --browser chrome --config-file cypress.config1.js --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582 --group Spec1 --ci-build-id 2 --parallel",
-    "cy:parallel:dash": "npm run cy:config1 -- --browser chrome --group chrome --ci-build-id 8 --parallel & npm run cy:config2 -- --browser electron --group electron --ci-build-id 8 --parallel"
+    "cy:parallel:dash": "npm run cy:config1 -- --browser chrome --group chrome --ci-build-id %BUILD_ID% --parallel & npm run cy:config2 -- --browser electron --group electron --ci-build-id %BUILD_ID% --parallel"
   },
   "author": "",
   "license": "ISC",
