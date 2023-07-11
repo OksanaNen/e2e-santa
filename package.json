@@ -11,8 +11,8 @@
     "cy:spec1:nokey": "cypress run --spec 'cypress/e2e/tests/test1/test1.feature'",
     "cy:spec2:nokey": "cypress run --spec 'cypress/e2e/tests/test2/test2.feature'",
     "cy:config1": "cypress run --spec 'cypress/e2e/tests/test1/test1.feature' --browser chrome --config-file cypress.config1.js",
-    "cy:config2": "cypress run --spec 'cypress/e2e/tests/test1/test2.feature' --browser electron --config-file cypress.config2.js",
-    "cy:parallel": "npm run cy:config1 -- --group Spec1 --ci-build-id 1 --parallel --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582 & npm run cy:config2 -- --group Spec2 --ci-build-id 1 --parallel --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582"
+    "cy:config2": "cypress run --spec 'cypress/e2e/tests/test2/test2.feature' --browser electron --config-file cypress.config2.js",
+    "cy:parallel:dash": "npm run cy:config1 -- --group Spec1 --ci-build-id 1 --parallel --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582 & npm run cy:config2 -- --group Spec2 --ci-build-id 1 --parallel --record --key 9d85102d-d568-44b5-8527-fa4f3c3ae582"
   },
   "author": "",
   "license": "ISC",
