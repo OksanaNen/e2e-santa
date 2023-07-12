@@ -4,7 +4,13 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "allure:results": "cypress run --env allure=true",
+    "allure:serve": "allure serve",
+    "allure:generate:report": "allure generate",
+    "allure:open:report": "allure open",
+    "allure:delete": "rmdir /q /s allure-report & rmdir /q /s allure-results",
+    "allure:run:report": "npm run allure:delete & npm run allure:results & npm run allure:generate:report & npm run allure:open:report" 
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +20,7 @@
     "cypress": "^12.2.0"
   },
   "devDependencies": {
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@shelex/cypress-allure-plugin": "^2.40.0"
   }
 }
