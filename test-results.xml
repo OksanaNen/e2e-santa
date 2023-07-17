@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="98.929" tests="7" failures="3">
+  <testsuite name="Root Suite" timestamp="2023-07-17T07:32:39" tests="0" file="cypress\e2e\tests\secretSanta.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="User login in secret santa website and create a box then adds participants and starts the toss" timestamp="2023-07-17T07:32:39" tests="7" time="98.910" failures="3">
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss userAuthor logs in and create a box successfuly" time="14.766" classname="userAuthor logs in and create a box successfuly">
+    </testcase>
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss userAuthor adds participants (creates invite link)" time="0.267" classname="userAuthor adds participants (creates invite link)">
+    </testcase>
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss users approve an invite link (example #1)" time="18.079" classname="users approve an invite link (example #1)">
+    </testcase>
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss users approve an invite link (example #2)" time="0.000" classname="users approve an invite link (example #2)">
+      <failure message="`cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.
+
+https://on.cypress.io/click" type="CypressError"><![CDATA[CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.
+
+https://on.cypress.io/click
+    at mouseAction (https://santa-secret.ru/__cypress/runner/cypress_runner.js:135222:76)
+    at Context.click (https://santa-secret.ru/__cypress/runner/cypress_runner.js:135386:14)
+    at wrapped (https://santa-secret.ru/__cypress/runner/cypress_runner.js:154002:19)
+From Your Spec Code:
+    at Context.eval (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:20605:49)
+    at Registry.runStepDefininition (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:8543:48)
+    at Object.fn (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14970:43)
+    at runStepWithLogGroup (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14604:29)
+    at Context.eval (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14966:62)]]></failure>
+    </testcase>
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss users approve an invite link (example #3)" time="0.000" classname="users approve an invite link (example #3)">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.btn-main`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.btn-main`, but never found it.
+    at Context.eval (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:20605:14)
+    at Registry.runStepDefininition (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:8543:48)
+    at Object.fn (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14970:43)
+    at runStepWithLogGroup (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14604:29)
+    at Context.eval (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14966:62)]]></failure>
+    </testcase>
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss userAuthor starts the toss and the toss completed successfuly" time="0.000" classname="userAuthor starts the toss and the toss completed successfuly">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;Перейти к жеребьевке&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Перейти к жеребьевке' but never did.
+    at Context.eval (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:15620:12)
+    at Registry.runStepDefininition (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:8543:48)
+    at Object.fn (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14970:43)
+    at runStepWithLogGroup (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14604:29)
+    at Context.eval (https://santa-secret.ru/__cypress/tests?p=cypress\e2e\tests\secretSanta.feature:14966:62)]]></failure>
+    </testcase>
+    <testcase name="User login in secret santa website and create a box then adds participants and starts the toss delete a box" time="14.988" classname="delete a box">
+    </testcase>
+  </testsuite>
+</testsuites>

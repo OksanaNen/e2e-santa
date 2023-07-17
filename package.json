@@ -10,7 +10,9 @@
     "allure:generate:report": "allure generate",
     "allure:open:report": "allure open",
     "allure:delete": "rmdir /q /s allure-report & rmdir /q /s allure-results",
-    "allure:run:report": "npm run allure:delete & npm run allure:results & npm run allure:generate:report & npm run allure:open:report" 
+    "allure:run:report": "npm run allure:delete & npm run allure:results & npm run allure:generate:report & npm run allure:open:report",
+    "cy:run:mocha:repor": "npx cypress run --reporter mocha-junit-reporter",
+    "jira-upload": "curl -H \"Content-Type: text/xml\" -X POST -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnQiOiJlMDhkYzY3Mi1jYjk3LTNlNTUtOWRiMS1hOGZhNDNhZGFkYjkiLCJhY2NvdW50SWQiOiI2NDI1NzkyOTAxNTJiNWY0ZjlmMzQ2ZjciLCJpc1hlYSI6ZmFsc2UsImlhdCI6MTY4OTU3NjY0NywiZXhwIjoxNjg5NjYzMDQ3LCJhdWQiOiI3NDZEMzM0QTAzOTU0NDU5OUVCNUE2MEY3QjdCQzRGOCIsImlzcyI6ImNvbS54cGFuZGl0LnBsdWdpbnMueHJheSIsInN1YiI6Ijc0NkQzMzRBMDM5NTQ0NTk5RUI1QTYwRjdCN0JDNEY4In0.7D1ShrygennWiCmmKoilj7cx1Rhkf51vZAjWm1yBV24\"  --data @\"D:/GitHub/QA Course/e2e-santa/test-results.xml\" https://xray.cloud.getxray.app/api/v2/import/execution/junit?projectKey=SS"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "@shelex/cypress-allure-plugin": "^2.40.0"
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "mocha-junit-reporter": "^2.2.1"
   }
 }
